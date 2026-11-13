@@ -11,7 +11,7 @@ import { registerAnalytics } from './commands/analytics'
 
 program
   .name('socifyr')
-  .description('Post to 10+ social platforms from your terminal')
+  .description('Post to 18 social platforms from your terminal')
   .version('0.2.0')
   .addHelpText('after', `
 Examples:

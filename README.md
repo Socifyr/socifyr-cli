@@ -1,6 +1,6 @@
 # socifyr
 
-Post to 10+ social platforms from your terminal. Powered by [`@socifyr/sdk`](../sdk/README.md).
+Post to 18 social platforms from your terminal. Powered by [`@socifyr/sdk`](../sdk/README.md).
 
 **Supported platforms:** Instagram, Facebook, X (Twitter), LinkedIn, TikTok, YouTube, Threads, Pinterest, Reddit, Bluesky
 
