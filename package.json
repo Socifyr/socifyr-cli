@@ -1,0 +1,58 @@
+{
+  "name": "@socifyr/cli",
+  "version": "0.2.0",
+  "description": "CLI for Socifyr, the social publishing API for teams and AI agents. Post to 18 social platforms from your terminal",
+  "license": "AGPL-3.0-or-later",
+  "bin": {
+    "socifyr": "./dist/cli.js"
+  },
+  "main": "./dist/cli.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "@socifyr/sdk": "^0.2.0",
+    "chalk": "^4.1.2",
+    "commander": "^12.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^25.5.2",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.4.9",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.0.0",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "socifyr",
+    "social-media",
+    "cli",
+    "instagram",
+    "twitter",
+    "linkedin",
+    "tiktok"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Socifyr/socifyr-cli"
+  },
+  "homepage": "https://socifyr.com/docs/cli",
+  "bugs": {
+    "url": "https://github.com/Socifyr/socifyr-cli/issues"
+  }
+}
