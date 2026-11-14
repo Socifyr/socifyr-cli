@@ -12,11 +12,10 @@ export function createClient(): Socifyr {
       `  Run ${chalk.cyan('socifyr configure --key sk_...')} or set ${chalk.cyan('SOCIFYR_API_KEY')}`,
     )
     console.error(
-      `  Get an API key at ${chalk.underline('https://socifyr.com/dashboard/integrations#api-keys')}`,
+      `  Get an API key at ${chalk.underline('https://app.socifyr.com/dashboard/integrations#api-keys')}`,
     )
     process.exit(1)
   }
 
-  // The API key belongs to one workspace, so no workspace id is needed.
   return new Socifyr({ apiKey, apiUrl })
 }

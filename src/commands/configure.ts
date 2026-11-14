@@ -7,10 +7,9 @@ export function registerConfigure(program: Command) {
     .command('configure')
     .description('Save your API key (it already belongs to one workspace)')
     .option('-k, --key <key>', 'API key (sk_...)')
-    .option('-w, --workspace <id>', 'Deprecated, ignored: the API key selects the workspace')
     .option('--api-url <url>', 'API base URL (for self-hosted)')
     .option('--show', 'Print current configuration')
-    .action((opts: { key?: string; workspace?: string; apiUrl?: string; show?: boolean }) => {
+    .action((opts: { key?: string; apiUrl?: string; show?: boolean }) => {
       if (opts.show) {
         const key = resolveApiKey()
         console.log(chalk.bold('Current configuration:'))
@@ -22,18 +21,11 @@ export function registerConfigure(program: Command) {
         return
       }
 
-      if (opts.workspace) {
-        console.log(
-          chalk.dim('Note: --workspace is no longer needed and is ignored. The API key already belongs to one workspace.'),
-        )
-      }
-
       if (!opts.key && !opts.apiUrl) {
-        if (opts.workspace) return
         console.log(chalk.yellow('Usage:'))
         console.log(`  socifyr configure --key sk_...`)
         console.log(
-          `\nCreate an API key at ${chalk.underline('https://socifyr.com/dashboard/integrations#api-keys')}. It posts to the workspace it was created in.`,
+          `\nCreate an API key at ${chalk.underline('https://app.socifyr.com/dashboard/integrations#api-keys')}. It posts to the workspace it was created in.`,
         )
         return
       }

@@ -29,7 +29,7 @@ socifyr configure --key sk_ac4f91eb...
 #   API key: sk_ac4f91e...
 ```
 
-Get your API key at **https://socifyr.com/dashboard/integrations#api-keys**. The key belongs to one workspace, so there is no workspace ID to set; use a different key to post to a different workspace. Check what's stored:
+Get your API key at **https://app.socifyr.com/dashboard/integrations#api-keys**. The key belongs to one workspace; use a different key to post to a different workspace. Check what's stored:
 
 ```bash
 socifyr configure --show

@@ -12,7 +12,7 @@ import { registerAnalytics } from './commands/analytics'
 program
   .name('socifyr')
   .description('Post to 18 social platforms from your terminal')
-  .version('0.2.0')
+  .version('0.3.0')
   .addHelpText('after', `
 Examples:
   $ socifyr configure --key sk_...

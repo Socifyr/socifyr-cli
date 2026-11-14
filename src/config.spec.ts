@@ -47,7 +47,7 @@ describe('config', () => {
 
     it('reads config file correctly', () => {
       const CONFIG_FILE = join(testDir, 'config.json')
-      const config = { apiKey: 'sk_test123', workspaceId: 'ws_abc' }
+      const config = { apiKey: 'sk_test123' }
       writeFileSync(CONFIG_FILE, JSON.stringify(config), 'utf-8')
       const readConfig = () => {
         if (!existsSync(CONFIG_FILE)) return {}
@@ -58,7 +58,7 @@ describe('config', () => {
         }
       }
       const result = readConfig()
-      expect(result).toEqual({ apiKey: 'sk_test123', workspaceId: 'ws_abc' })
+      expect(result).toEqual({ apiKey: 'sk_test123' })
     })
   })
 })

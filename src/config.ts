@@ -4,8 +4,6 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs'
 
 interface StoredConfig {
   apiKey?: string
-  /** Legacy — no longer used: the API key selects its own workspace. */
-  workspaceId?: string
   apiUrl?: string
 }
 

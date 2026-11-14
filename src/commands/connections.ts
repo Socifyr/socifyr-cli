@@ -37,7 +37,7 @@ export function registerConnections(program: Command) {
 
         if (active.length === 0) {
           console.log(chalk.yellow('No connected accounts found.'))
-          console.log(`Connect accounts at ${chalk.underline('https://socifyr.com/dashboard/integrations')}`)
+          console.log(`Connect accounts at ${chalk.underline('https://app.socifyr.com/dashboard/accounts')}`)
           return
         }
 
